@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body class="container">
     <header class="logo">
@@ -18,14 +19,20 @@
 
     <div class="main"> 
         <form>
-            <input type="text" placeholder="Name ...">
-            <input type="text" placeholder="Description ...">
-            <input type="date" placeholder="date">
+            <input type="text" id="taskName"  placeholder="Name ...">
+            <input type="date" id="taskDate"  placeholder="Date ...">
+            <input type="text" id="taskDescription" placeholder="Description ...">
             <button type="submit"> <i class="fas fa-plus-square"></i></button>
         </form>
     </div>
-
-    <div class="todoList">
+    <div style="display: flex;">
+        
+        <div class="todo-header"><h2><strong>Name</strong></h2></div>
+        <div class="todo-header"><h2><strong>Date</strong></h2></div>
+        <div class="todo-header"><h2><strong>Description</strong></h2></div>
+        
+    </div>
+    <div class="todoList" >
         <ul>
         </ul>
         <a class="clearAll" id="clearAll">Clear All</a>

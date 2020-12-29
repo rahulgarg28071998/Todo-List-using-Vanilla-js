@@ -25,6 +25,7 @@ html {
 
 .main {
     padding: 20px;
+    display: block;
 }
 
 form {
@@ -83,10 +84,23 @@ i {
     pointer-events: none;
 }
 
-.todo-item {
+.todo-name {
     flex-grow: 1;
 }
-
+.todo-date
+{
+    flex-grow: 1;
+}
+.todo-description{
+    flex-grow: 1;
+}
+.todo-header{
+    flex-grow: 1;
+    text-align: center;
+}
+input[type="text"]{
+    border: 1px solid #000;
+}
 .clearAll {
     display: flex;
     justify-content: flex-end;
@@ -97,13 +111,4 @@ i {
 
 .clearAll:hover {
     color: lightcoral;
-}
-
-.todo-list-item {
-    transition: all 0.3s ease-out;
-}
-
-.todo-list-item-fall {
-    transform: translateY(12rem) rotateZ(10deg);
-    opacity: 0;
 }
